@@ -1,29 +1,18 @@
+*** How to configure mockoon app to have expected sucess response ***
+
+------------------
+URL -> mockTest
+------------------
+METHOD -> GET
+------------------
+RESPONSE -> 200 ok
+------------------
+BODY
+
 {
-    "uuid": "a8806e33-8737-4486-b3f0-c2d3404afd05",
-    "type": "http",
-    "documentation": "Address by zipcode",
-    "method": "get",
-    "endpoint": "mockTest",
-    "responses": [
-        {
-            "uuid": "c4fc9515-768f-436a-b89e-dc0baa0e6155",
-            "body": "{\n    \"cep\": \"12345-888\",\n    \"uf\": \"NY\",\n    \"localidade\": \"New York\",\n    \"logradouro\": \"Highway 678\"\n    \n}",
-            "latency": 0,
-            "statusCode": 200,
-            "label": "",
-            "headers": [],
-            "bodyType": "INLINE",
-            "filePath": "",
-            "databucketID": "",
-            "sendFileAsBody": false,
-            "rules": [],
-            "rulesOperator": "OR",
-            "disableTemplating": false,
-            "fallbackTo404": false,
-            "default": true,
-            "crudKey": "id",
-            "callbacks": []
-        }
-    ],
-    "responseMode": null
+    "cep": "12345-888",
+    "uf": "NY",
+    "localidade": "New York",
+    "logradouro": "Highway 678"
 }
+------------------
